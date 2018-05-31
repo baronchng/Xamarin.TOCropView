@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC92A53320BE9AC500864903 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = FC92A53220BE9AC500864903 /* Makefile */; };
+		FCBAC9B920BD782400100079 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9B820BD782400100079 /* TOCropViewController.m */; };
+		FCBAC9BA20BD782400100079 /* TOCropViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = FCBAC9B720BD782400100079 /* TOCropViewController.h */; };
+		FCBAC9E820BD7A6400100079 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9D820BD7A6200100079 /* TOCropToolbar.m */; };
+		FCBAC9E920BD7A6400100079 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9DA20BD7A6200100079 /* TOCropViewControllerTransitioning.m */; };
+		FCBAC9EA20BD7A6400100079 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9DB20BD7A6200100079 /* UIImage+CropRotate.m */; };
+		FCBAC9EB20BD7A6400100079 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9DD20BD7A6300100079 /* TOCropScrollView.m */; };
+		FCBAC9EC20BD7A6400100079 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9E020BD7A6300100079 /* TOCropView.m */; };
+		FCBAC9ED20BD7A6400100079 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9E420BD7A6300100079 /* TOCropOverlayView.m */; };
+		FCBAC9EE20BD7A6400100079 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9E520BD7A6300100079 /* TOActivityCroppedImageProvider.m */; };
+		FCBAC9EF20BD7A6400100079 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBAC9E720BD7A6400100079 /* TOCroppedImageAttributes.m */; };
+		FCBAC9F220BD7B1E00100079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBAC9F120BD7B1D00100079 /* Foundation.framework */; };
+		FCBAC9F420BD7B2700100079 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBAC9F320BD7B2700100079 /* UIKit.framework */; };
+		FCBAC9F620BD8A8500100079 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBAC9F520BD8A8500100079 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCBAC9B220BD782400100079 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FCBAC9BA20BD782400100079 /* TOCropViewController.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC92A53220BE9AC500864903 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		FCBAC9B420BD782400100079 /* libTOCropViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTOCropViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBAC9B720BD782400100079 /* TOCropViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOCropViewController.h; sourceTree = "<group>"; };
+		FCBAC9B820BD782400100079 /* TOCropViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOCropViewController.m; sourceTree = "<group>"; };
+		FCBAC9CD20BD798D00100079 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBAC9D420BD798E00100079 /* TOCropViewController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCBAC9D820BD7A6200100079 /* TOCropToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropToolbar.m; sourceTree = "<group>"; };
+		FCBAC9D920BD7A6200100079 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
+		FCBAC9DA20BD7A6200100079 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
+		FCBAC9DB20BD7A6200100079 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		FCBAC9DC20BD7A6300100079 /* TOCropToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropToolbar.h; sourceTree = "<group>"; };
+		FCBAC9DD20BD7A6300100079 /* TOCropScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropScrollView.m; sourceTree = "<group>"; };
+		FCBAC9DE20BD7A6300100079 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		FCBAC9DF20BD7A6300100079 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
+		FCBAC9E020BD7A6300100079 /* TOCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropView.m; sourceTree = "<group>"; };
+		FCBAC9E120BD7A6300100079 /* TOCropScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropScrollView.h; sourceTree = "<group>"; };
+		FCBAC9E220BD7A6300100079 /* TOCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropView.h; sourceTree = "<group>"; };
+		FCBAC9E320BD7A6300100079 /* TOCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropOverlayView.h; sourceTree = "<group>"; };
+		FCBAC9E420BD7A6300100079 /* TOCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropOverlayView.m; sourceTree = "<group>"; };
+		FCBAC9E520BD7A6300100079 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
+		FCBAC9E620BD7A6300100079 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCroppedImageAttributes.h; sourceTree = "<group>"; };
+		FCBAC9E720BD7A6400100079 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCroppedImageAttributes.m; sourceTree = "<group>"; };
+		FCBAC9F120BD7B1D00100079 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCBAC9F320BD7B2700100079 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FCBAC9F520BD8A8500100079 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCBAC9B120BD782400100079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBAC9F620BD8A8500100079 /* QuartzCore.framework in Frameworks */,
+				FCBAC9F420BD7B2700100079 /* UIKit.framework in Frameworks */,
+				FCBAC9F220BD7B1E00100079 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCBAC9AB20BD782400100079 = {
+			isa = PBXGroup;
+			children = (
+				FC92A53220BE9AC500864903 /* Makefile */,
+				FCBAC9B620BD782400100079 /* TOCropViewController */,
+				FCBAC9B520BD782400100079 /* Products */,
+				FCBAC9F020BD7B1D00100079 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCBAC9B520BD782400100079 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCBAC9B420BD782400100079 /* libTOCropViewController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCBAC9B620BD782400100079 /* TOCropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCBAC9D920BD7A6200100079 /* TOActivityCroppedImageProvider.h */,
+				FCBAC9E520BD7A6300100079 /* TOActivityCroppedImageProvider.m */,
+				FCBAC9E320BD7A6300100079 /* TOCropOverlayView.h */,
+				FCBAC9E420BD7A6300100079 /* TOCropOverlayView.m */,
+				FCBAC9E620BD7A6300100079 /* TOCroppedImageAttributes.h */,
+				FCBAC9E720BD7A6400100079 /* TOCroppedImageAttributes.m */,
+				FCBAC9E120BD7A6300100079 /* TOCropScrollView.h */,
+				FCBAC9DD20BD7A6300100079 /* TOCropScrollView.m */,
+				FCBAC9DC20BD7A6300100079 /* TOCropToolbar.h */,
+				FCBAC9D820BD7A6200100079 /* TOCropToolbar.m */,
+				FCBAC9E220BD7A6300100079 /* TOCropView.h */,
+				FCBAC9E020BD7A6300100079 /* TOCropView.m */,
+				FCBAC9DF20BD7A6300100079 /* TOCropViewControllerTransitioning.h */,
+				FCBAC9DA20BD7A6200100079 /* TOCropViewControllerTransitioning.m */,
+				FCBAC9DE20BD7A6300100079 /* UIImage+CropRotate.h */,
+				FCBAC9DB20BD7A6200100079 /* UIImage+CropRotate.m */,
+				FCBAC9CD20BD798D00100079 /* Info.plist */,
+				FCBAC9D420BD798E00100079 /* TOCropViewController-Bridging-Header.h */,
+				FCBAC9B720BD782400100079 /* TOCropViewController.h */,
+				FCBAC9B820BD782400100079 /* TOCropViewController.m */,
+			);
+			path = TOCropViewController;
+			sourceTree = "<group>";
+		};
+		FCBAC9F020BD7B1D00100079 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCBAC9F520BD8A8500100079 /* QuartzCore.framework */,
+				FCBAC9F320BD7B2700100079 /* UIKit.framework */,
+				FCBAC9F120BD7B1D00100079 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCBAC9B320BD782400100079 /* TOCropViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBAC9BD20BD782400100079 /* Build configuration list for PBXNativeTarget "TOCropViewController" */;
+			buildPhases = (
+				FCBAC9B020BD782400100079 /* Sources */,
+				FCBAC9B120BD782400100079 /* Frameworks */,
+				FCBAC9B220BD782400100079 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TOCropViewController;
+			productName = TOCropViewController;
+			productReference = FCBAC9B420BD782400100079 /* libTOCropViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCBAC9AC20BD782400100079 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Xamarin, Inc.";
+				TargetAttributes = {
+					FCBAC9B320BD782400100079 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FCBAC9AF20BD782400100079 /* Build configuration list for PBXProject "TOCropViewController" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCBAC9AB20BD782400100079;
+			productRefGroup = FCBAC9B520BD782400100079 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCBAC9B320BD782400100079 /* TOCropViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCBAC9B020BD782400100079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC92A53320BE9AC500864903 /* Makefile in Sources */,
+				FCBAC9E920BD7A6400100079 /* TOCropViewControllerTransitioning.m in Sources */,
+				FCBAC9E820BD7A6400100079 /* TOCropToolbar.m in Sources */,
+				FCBAC9EA20BD7A6400100079 /* UIImage+CropRotate.m in Sources */,
+				FCBAC9EF20BD7A6400100079 /* TOCroppedImageAttributes.m in Sources */,
+				FCBAC9EC20BD7A6400100079 /* TOCropView.m in Sources */,
+				FCBAC9EE20BD7A6400100079 /* TOActivityCroppedImageProvider.m in Sources */,
+				FCBAC9ED20BD7A6400100079 /* TOCropOverlayView.m in Sources */,
+				FCBAC9EB20BD7A6400100079 /* TOCropScrollView.m in Sources */,
+				FCBAC9B920BD782400100079 /* TOCropViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FCBAC9BB20BD782400100079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCBAC9BC20BD782400100079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCBAC9BE20BD782400100079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCBAC9BF20BD782400100079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCBAC9AF20BD782400100079 /* Build configuration list for PBXProject "TOCropViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBAC9BB20BD782400100079 /* Debug */,
+				FCBAC9BC20BD782400100079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBAC9BD20BD782400100079 /* Build configuration list for PBXNativeTarget "TOCropViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBAC9BE20BD782400100079 /* Debug */,
+				FCBAC9BF20BD782400100079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCBAC9AC20BD782400100079 /* Project object */;
+}
