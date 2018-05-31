@@ -14,7 +14,7 @@
     <PackageId>Xamarin.TOCropView</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Baron Chng</Authors>
-    <PackageLicenseUrl>https://github.com/TimOliver/TOCropViewController/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl>https://github.com/baronchng/Xamarin.TOCropView/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>baronchng</Owners>
     <Summary>Xamarin.iOS binding for TOCropViewController</Summary>
     <PackageTags>iOS, Xamarin, binding, tocropview, tocropviewcontroller, crop</PackageTags>
