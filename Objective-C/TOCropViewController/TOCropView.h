@@ -21,17 +21,14 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "TOCropViewConstants.h"
 
 @class TOCropOverlayView;
-
-typedef NS_ENUM(NSInteger, TOCropViewCroppingStyle) {
-    TOCropViewCroppingStyleDefault,     // The regular, rectangular crop box
-    TOCropViewCroppingStyleCircular     // A fixed, circular crop box
-};
-
 @class TOCropView;
 
-@protocol TOCropViewDelegate <NSObject>
+NS_ASSUME_NONNULL_BEGIN
+
+@protocol TOCropViewDelegate<NSObject>
 
 - (void)cropViewDidBecomeResettable:(nonnull TOCropView *)cropView;
 - (void)cropViewDidBecomeNonResettable:(nonnull TOCropView *)cropView;
@@ -54,6 +51,11 @@ typedef NS_ENUM(NSInteger, TOCropViewCroppingStyle) {
  A grid view overlaid on top of the foreground image view's container.
  */
 @property (nonnull, nonatomic, strong, readonly) TOCropOverlayView *gridOverlayView;
+
+/**
+ A container view that clips the a copy of the image so it appears over the dimming view
+ */
+@property (nonnull, nonatomic, readonly) UIView *foregroundContainerView;
 
 /**
  A delegate object that receives notifications from the crop view
@@ -161,6 +163,11 @@ The minimum croping aspect ratio. If set, user is prevented from setting croppin
 @property (nonatomic, assign) CGFloat minimumAspectRatio;
 
 /**
+ The maximum scale that user can apply to image by pinching to zoom. Small values are only recomended with aspectRatioLockEnabled set to true. Default to 15.0
+ */
+@property (nonatomic, assign) CGFloat maximumZoomScale;
+
+/**
  Create a default instance of the crop view with the supplied image
  */
 - (nonnull instancetype)initWithImage:(nonnull UIImage *)image;
@@ -250,3 +257,5 @@ The minimum croping aspect ratio. If set, user is prevented from setting croppin
 - (void)moveCroppedContentToCenterAnimated:(BOOL)animated;
 
 @end
+
+NS_ASSUME_NONNULL_END

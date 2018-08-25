@@ -38,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC3576E721312C94004F442D /* TOCropViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewConstants.h; sourceTree = "<group>"; };
 		FC92A53220BE9AC500864903 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		FCBAC9B420BD782400100079 /* libTOCropViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTOCropViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBAC9B720BD782400100079 /* TOCropViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOCropViewController.h; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		FCBAC9B620BD782400100079 /* TOCropViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FC3576E721312C94004F442D /* TOCropViewConstants.h */,
 				FCBAC9D920BD7A6200100079 /* TOActivityCroppedImageProvider.h */,
 				FCBAC9E520BD7A6300100079 /* TOActivityCroppedImageProvider.m */,
 				FCBAC9E320BD7A6300100079 /* TOCropOverlayView.h */,

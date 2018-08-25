@@ -12,14 +12,15 @@
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Xamarin.TOCropView</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <Authors>Baron Chng</Authors>
     <PackageLicenseUrl>https://github.com/baronchng/Xamarin.TOCropView/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>baronchng</Owners>
     <Summary>Xamarin.iOS binding for TOCropViewController</Summary>
     <PackageTags>iOS, Xamarin, binding, tocropview, tocropviewcontroller, crop</PackageTags>
     <Title>TOCropViewController for Xamarin.iOS</Title>
-    <Description>Xamarin.iOS binding for TOCropViewController</Description>
+    <Description>Xamarin.iOS binding for TOCropViewController
+Source from Release 2.3.8</Description>
     <PackageProjectUrl>https://github.com/baronchng/Xamarin.TOCropView</PackageProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -53,13 +54,13 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <NativeReference Include="..\..\..\Desktop\random projects\XamarinBindings\TOCropViewController\libTOCropViewController.a">
       <Kind>Static</Kind>
       <ForceLoad>True</ForceLoad>
     </NativeReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets')" />

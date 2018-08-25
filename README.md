@@ -1,10 +1,14 @@
-# TOCropViewController / CropViewController
+# TOCropViewController
 
 <p align="center">
-<img src="https://github.com/TimOliver/TOCropViewController/raw/master/screenshot.jpg" width="890" style="margin:0 auto" />
+<img src="https://github.com/TimOliver/TOCropViewController/raw/master/Images/screenshot.jpg" width="890" style="margin:0 auto" />
 </p>
 
+`TOCropViewController` is an open-source `UIViewController` subclass to crop out sections of `UIImage` objects, as well as perform basic rotations. It is excellent for things like editing profile pictures, or sharing parts of a photo online. It has been designed with the iOS Photos app editor in mind, and as such, behaves in a way that should already feel familiar to users of iOS.
+
 Xamarin.iOS bindings for [TOCropViewController](https://github.com/TimOliver/TOCropViewController).
+
+Currently using Release 2.3.8 as source.
 
 ## Features
 * Crop images by dragging the edges of a grid overlay.

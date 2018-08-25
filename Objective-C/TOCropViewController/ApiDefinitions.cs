@@ -4,7 +4,7 @@ using Foundation;
 using ObjCRuntime;
 using UIKit;
 
-namespace TOCropViewController
+namespace Xamarin.TOCropView
 {
 	// @protocol TOCropViewDelegate <NSObject>
 	[Protocol, Model]
@@ -37,6 +37,10 @@ namespace TOCropViewController
 		// @property (readonly, nonatomic, strong) TOCropOverlayView * _Nonnull gridOverlayView;
 		[Export ("gridOverlayView", ArgumentSemantic.Strong)]
 		TOCropOverlayView GridOverlayView { get; }
+
+		// @property (readonly, nonatomic) UIView * _Nonnull foregroundContainerView;
+		[Export ("foregroundContainerView")]
+		UIView ForegroundContainerView { get; }
 
 		[Wrap ("WeakDelegate")]
 		[NullAllowed]
@@ -121,6 +125,10 @@ namespace TOCropViewController
 		// @property (assign, nonatomic) CGFloat minimumAspectRatio;
 		[Export ("minimumAspectRatio")]
 		nfloat MinimumAspectRatio { get; set; }
+
+		// @property (assign, nonatomic) CGFloat maximumZoomScale;
+		[Export ("maximumZoomScale")]
+		nfloat MaximumZoomScale { get; set; }
 
 		// -(instancetype _Nonnull)initWithImage:(UIImage * _Nonnull)image;
 		[Export ("initWithImage:")]
@@ -394,6 +402,10 @@ namespace TOCropViewController
 		[Export ("rotateClockwiseButtonHidden")]
 		bool RotateClockwiseButtonHidden { get; set; }
 
+		// @property (assign, nonatomic) BOOL hidesNavigationBar;
+		[Export ("hidesNavigationBar")]
+		bool HidesNavigationBar { get; set; }
+
 		// @property (assign, nonatomic) BOOL rotateButtonsHidden;
 		[Export ("rotateButtonsHidden")]
 		bool RotateButtonsHidden { get; set; }
@@ -526,7 +538,7 @@ namespace TOCropViewController
 		[Export ("originalImageSize")]
 		CGSize OriginalImageSize { get; }
 
-		// -(instancetype)initWithCroppedFrame:(CGRect)croppedFrame angle:(NSInteger)angle originalImageSize:(CGSize)originalSize;
+		// -(instancetype _Nonnull)initWithCroppedFrame:(CGRect)croppedFrame angle:(NSInteger)angle originalImageSize:(CGSize)originalSize;
 		[Export ("initWithCroppedFrame:angle:originalImageSize:")]
 		IntPtr Constructor (CGRect croppedFrame, nint angle, CGSize originalSize);
 	}
@@ -585,10 +597,10 @@ namespace TOCropViewController
 		void Reset ();
 	}
 
-	// @interface CropRotate (UIImage)
+	// @interface TOCropRotate (UIImage)
 	[Category]
 	[BaseType (typeof(UIImage))]
-	interface UIImage_CropRotate
+	interface UIImage_TOCropRotate
 	{
 		// -(UIImage * _Nonnull)croppedImageWithFrame:(CGRect)frame angle:(NSInteger)angle circularClip:(BOOL)circular;
 		[Export ("croppedImageWithFrame:angle:circularClip:")]

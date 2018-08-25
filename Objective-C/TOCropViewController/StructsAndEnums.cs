@@ -1,7 +1,9 @@
 using System;
+using System.Runtime.InteropServices;
+using Foundation;
 using ObjCRuntime;
 
-namespace TOCropViewController
+namespace Xamarin.TOCropView
 {
 	[Native]
 	public enum TOCropViewCroppingStyle : nint
@@ -29,5 +31,13 @@ namespace TOCropViewController
 	{
 		Bottom,
 		Top
+	}
+
+	static class CFunctions
+	{
+		// NSBundle * TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT (NSObject *object);
+		[DllImport ("__Internal")]
+		[Verify (PlatformInvoke)]
+		static extern NSBundle TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT (NSObject @object);
 	}
 }
