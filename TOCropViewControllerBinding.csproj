@@ -12,7 +12,7 @@
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Xamarin.TOCropView</PackageId>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>1.2.0</PackageVersion>
     <Authors>Baron Chng</Authors>
     <PackageLicenseUrl>https://github.com/baronchng/Xamarin.TOCropView/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>baronchng</Owners>
@@ -20,7 +20,7 @@
     <PackageTags>iOS, Xamarin, binding, tocropview, tocropviewcontroller, crop</PackageTags>
     <Title>TOCropViewController for Xamarin.iOS</Title>
     <Description>Xamarin.iOS binding for TOCropViewController
-Source from Release 2.3.8</Description>
+Source from Release 2.5.0</Description>
     <PackageProjectUrl>https://github.com/baronchng/Xamarin.TOCropView</PackageProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

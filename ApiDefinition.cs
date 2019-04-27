@@ -130,6 +130,14 @@ namespace Xamarin.TOCropView
         [Export("maximumZoomScale")]
         nfloat MaximumZoomScale { get; set; }
 
+        // @property (assign, nonatomic) BOOL alwaysShowCroppingGrid;
+        [Export("alwaysShowCroppingGrid")]
+        bool AlwaysShowCroppingGrid { get; set; }
+
+        // @property (assign, nonatomic) BOOL translucencyAlwaysHidden;
+        [Export("translucencyAlwaysHidden")]
+        bool TranslucencyAlwaysHidden { get; set; }
+
         // -(instancetype _Nonnull)initWithImage:(UIImage * _Nonnull)image;
         [Export("initWithImage:")]
         IntPtr Constructor(UIImage image);
@@ -287,6 +295,10 @@ namespace Xamarin.TOCropView
         [Export("rotateClockwiseButtonHidden")]
         bool RotateClockwiseButtonHidden { get; set; }
 
+        // @property (assign, nonatomic) BOOL resetButtonHidden;
+        [Export("resetButtonHidden")]
+        bool ResetButtonHidden { get; set; }
+
         // @property (assign, nonatomic) BOOL resetButtonEnabled;
         [Export("resetButtonEnabled")]
         bool ResetButtonEnabled { get; set; }
@@ -370,6 +382,10 @@ namespace Xamarin.TOCropView
         [Export("customAspectRatio", ArgumentSemantic.Assign)]
         CGSize CustomAspectRatio { get; set; }
 
+        // @property (copy, nonatomic) NSString * _Nullable customAspectRatioName;
+        [NullAllowed, Export("customAspectRatioName")]
+        string CustomAspectRatioName { get; set; }
+
         // @property (readonly, nonatomic) UILabel * _Nullable titleLabel;
         [NullAllowed, Export("titleLabel")]
         UILabel TitleLabel { get; }
@@ -381,6 +397,10 @@ namespace Xamarin.TOCropView
         // @property (copy, nonatomic) NSString * _Nullable cancelButtonTitle;
         [NullAllowed, Export("cancelButtonTitle")]
         string CancelButtonTitle { get; set; }
+
+        // @property (assign, nonatomic) BOOL showCancelConfirmationDialog;
+        [Export("showCancelConfirmationDialog")]
+        bool ShowCancelConfirmationDialog { get; set; }
 
         // @property (assign, nonatomic) BOOL aspectRatioLockDimensionSwapEnabled;
         [Export("aspectRatioLockDimensionSwapEnabled")]
@@ -410,6 +430,10 @@ namespace Xamarin.TOCropView
         [Export("rotateButtonsHidden")]
         bool RotateButtonsHidden { get; set; }
 
+        // @property (assign, nonatomic) BOOL resetButtonHidden;
+        [Export("resetButtonHidden")]
+        bool ResetButtonHidden { get; set; }
+
         // @property (assign, nonatomic) BOOL aspectRatioPickerButtonHidden;
         [Export("aspectRatioPickerButtonHidden")]
         bool AspectRatioPickerButtonHidden { get; set; }
@@ -425,6 +449,10 @@ namespace Xamarin.TOCropView
         // @property (nonatomic, strong) NSArray<UIActivityType> * _Nullable excludedActivityTypes;
         [NullAllowed, Export("excludedActivityTypes", ArgumentSemantic.Strong)]
         string[] ExcludedActivityTypes { get; set; }
+
+        // @property (nonatomic, strong) NSArray<NSNumber *> * _Nullable allowedAspectRatios;
+        [NullAllowed, Export("allowedAspectRatios", ArgumentSemantic.Strong)]
+        NSNumber[] AllowedAspectRatios { get; set; }
 
         // @property (nonatomic, strong) void (^ _Nullable)(BOOL) onDidFinishCancelled;
         [NullAllowed, Export("onDidFinishCancelled", ArgumentSemantic.Strong)]
